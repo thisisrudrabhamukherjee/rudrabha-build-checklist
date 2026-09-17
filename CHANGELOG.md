@@ -6,6 +6,23 @@ The release history is taken from the application's own "What has changed" scree
 Versions follow [Semantic Versioning](https://semver.org/).
 This file uses [Keep a Changelog](https://keepachangelog.com/) section headings.
 
+## [1.7.0] — 18 September 2026
+
+### Fixed
+
+- The top bar layout now uses three robust columns so the full product name never collides with navigation buttons.
+- The Saved mark has moved to a floating toast near the bottom of the screen, leaving the top bar clear.
+
+### Added
+
+- Single-stage view with clear Previous stage and Next stage navigation, keeping the complete stage overview in Progress.
+- An explicit Save button on checklist screens for immediate peace of mind.
+- A 5-step text size slider with live resizing from extra small to extra large.
+- A "Forgot PIN?" recovery link on the lock screen that leads directly to your recovery question.
+- Export your checklist to plain text (.txt) and Markdown (.md) with creation timestamps.
+- Collapsible sections for the Word list and prompt groups to make scanning faster.
+- In-app install guidance and home screen install banner.
+
 ## [1.6.0] — 17 September 2026
 
 ### Changed

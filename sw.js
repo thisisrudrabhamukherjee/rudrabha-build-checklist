@@ -1,5 +1,5 @@
 /* Service worker for this application. Cache name carries the version. */
-var CACHE = "rmbc-1.6.0";
+var CACHE = "rmbc-1.7.0";
 var PRECACHE = [
   "/",
   "/manifest.webmanifest",
@@ -39,9 +39,26 @@ self.addEventListener("fetch", function (event) {
   if (req.mode === "navigate") {
     event.respondWith(
       caches.match("/").then(function (cached) {
-        return cached || fetch(req);
+        if (cached) {
+          fetch(req).then(function (net) {
+            if (net && net.ok) {
+              var copy = net.clone();
+              caches.open(CACHE).then(function (cache) { cache.put("/", copy); });
+            }
+          }).catch(function () {});
+          return cached;
+        }
+        return fetch(req).then(function (net) {
+          var copy = net.clone();
+          caches.open(CACHE).then(function (cache) { cache.put("/", copy); });
+          return net;
+        }).catch(function () {
+          return caches.match("/");
+        });
       }).catch(function () {
-        return caches.match("/");
+        return fetch(req).catch(function () {
+          return caches.match("/");
+        });
       })
     );
     return;
