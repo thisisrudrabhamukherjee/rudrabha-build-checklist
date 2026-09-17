@@ -6,7 +6,21 @@ The release history is taken from the application's own "What has changed" scree
 Versions follow [Semantic Versioning](https://semver.org/).
 This file uses [Keep a Changelog](https://keepachangelog.com/) section headings.
 
-## [1.4.0] — 2026-09-16
+## [1.5.0] — 17 September 2026
+
+### Added
+
+- Installable on your phone, tablet or computer.
+- Works offline once installed.
+- A newer-version banner appears with your consent before updating; your work is unaffected.
+- A setting to check for updates, or to switch off the automatic check.
+
+### Changed
+
+- The page used to make no connection once open; it now asks the host whether a newer version exists unless you switch that off. The privacy notice explains.
+- The Content-Security-Policy now allows this app's own worker, manifest and icons. The app still never opens a network connection of its own to send your work (connect-src stays 'none').
+
+## [1.4.0] — 16 September 2026
 
 ### Added
 
@@ -15,7 +29,7 @@ This file uses [Keep a Changelog](https://keepachangelog.com/) section headings.
 - A way to move your work to another web address or another device, keeping it scrambled the whole way if your lock is on.
 - You can now save this page itself, so your copy keeps working whatever happens to any website.
 
-## [1.3.0] — 2026-09-16
+## [1.3.0] — 16 September 2026
 
 ### Removed
 
@@ -26,7 +40,7 @@ This file uses [Keep a Changelog](https://keepachangelog.com/) section headings.
 - Messages now clear themselves instead of staying on screen.
 - The privacy wording now separates what this page does from what a website recorded when it served the page to you.
 
-## [1.2.0] — 2026-09-16
+## [1.2.0] — 16 September 2026
 
 ### Added
 
@@ -37,7 +51,7 @@ This file uses [Keep a Changelog](https://keepachangelog.com/) section headings.
 - A tick on the stage you were standing on that could not be seen against the circle behind it.
 - Long labels pushing the page sideways on small screens.
 
-## [1.1.0] — 2026-09-16
+## [1.1.0] — 16 September 2026
 
 ### Fixed
 
@@ -48,7 +62,7 @@ This file uses [Keep a Changelog](https://keepachangelog.com/) section headings.
 
 - Consistent creator attribution and a version on every copy.
 
-## [1.0.0] — 2026-09-15
+## [1.0.0] — 15 September 2026
 
 ### Added
 

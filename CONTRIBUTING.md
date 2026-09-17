@@ -7,7 +7,7 @@ Thank you for considering a contribution to Rudrabha Mukherjee's Build Checklist
 The application is a **single HTML file** with no build step, no package manager and no framework. It must stay that way.
 
 - Do not add a bundler, `package.json`, CDN links, web fonts, icon sets, analytics or any other external resource.
-- Every change must keep the app working offline with **zero network requests** once the page is open.
+- Every change must keep the app working offline once installed or opened, with **no network requests that send the user's work**; the documented version check is the only connection the app makes of its own.
 - The automated test suite in `docs/COMPLETE-SOURCE-v3.9.0.txt` must pass after any change to the application.
 - Write in **British English**: organise, recognise, colour, behaviour, licence (noun), license (verb).
 - Keep the reading level plain: short sentences, common words, written for readers with basic English.

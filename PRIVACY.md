@@ -1,14 +1,14 @@
 # Privacy notice
 
 The authoritative copy of this notice is the one inside the application
-(**Rudrabha Mukherjee's Build Checklist**, version **1.4.0**). This file is provided so the
+(**Rudrabha Mukherjee's Build Checklist**, version **1.5.0**). This file is provided so the
 notice can be read on GitHub without opening the app.
 
 ---
 
 PRIVACY NOTICE
 
-Rudrabha Mukherjee's Build Checklist, version 1.4.0
+Rudrabha Mukherjee's Build Checklist, version 1.5.0
 Created by Rudrabha Mukherjee
 
 SHORT VERSION
@@ -26,9 +26,12 @@ including Rudrabha Mukherjee, and including whoever hosts the address you
 opened it from. It is never uploaded.
 
 NETWORK
-Once it is open, this page makes no connections to the internet at all. It
-sends nothing and fetches nothing. You can switch off your data and it keeps
-working.
+Once open, this page sends none of your work anywhere and fetches nothing to
+display itself. Exception: version check — on open it asks the address whether
+a newer version exists; your browser may also check the worker file. That
+request carries only your internet address and the time, as any web page
+request does. Nothing you have written is part of it. You can switch the check
+off in Settings. A file copy opened from disk makes no check.
 
 HOW YOU GOT THIS PAGE
 If somebody gave you this page as a file, nothing about you reached anybody

@@ -8,19 +8,26 @@ A single-file offline web app containing the complete process for building softw
 
 The application is one HTML file. Anybody can save their own permanent copy from inside the app; that copy then works offline for good. To confirm a download is unmodified, check it against the published SHA-256 fingerprint. See [docs/VERIFYING-A-COPY.md](docs/VERIFYING-A-COPY.md).
 
-Published fingerprint for version 1.4.0:
+Published fingerprint for version 1.5.0:
 
 ```
-6e25282d7e93d2d3dbaf5fcfab2a37150f2a1067e6853beb58a3138e49831f11
+3a1b2e8f14625219d92439988b600672721f8bb888af1784af5efed4c08fbe68
 ```
 
-A versioned copy lives at [`releases/Rudrabha-Mukherjee-Build-Checklist_v1.4.0.html`](releases/Rudrabha-Mukherjee-Build-Checklist_v1.4.0.html).
+File size: 229808 bytes.
+
+A versioned copy lives at [`releases/Rudrabha-Mukherjee-Build-Checklist_v1.5.0.html`](releases/Rudrabha-Mukherjee-Build-Checklist_v1.5.0.html) (published with each release).
+
+## Installing
+
+You can install Rudrabha Mukherjee's Build Checklist on your phone, tablet or computer so it opens like an app and works offline. See [docs/INSTALLING.md](docs/INSTALLING.md) for step-by-step instructions on Android, iPhone and iPad, Windows, macOS, and Ubuntu/Linux.
 
 ## What it does
 
 - Thirteen stages covering the process of building software with an AI assistant, with every step worth ticking off, tailored to what you are making
 - One self-contained HTML file — no libraries, frameworks, web fonts, icon sets or third-party code — so it keeps working when you have no internet, and so you can save the whole page as a single file
-- Zero network requests once the page is open
+- Installable as a progressive web app; works offline once installed
+- Your work is never sent over the network by the app itself; at a web address it may ask whether a newer version exists (you can switch that off in Settings)
 - Your work is kept in the browser's `localStorage` on your own device; nothing is uploaded; no accounts, cookies, analytics or tracking
 - Optional lock: AES-GCM-256 encryption of the saved record, with the key wrapped separately by a PIN (PBKDF2-SHA256, 250,000 iterations) and by the answer to one recovery question (PBKDF2-SHA256, 1,200,000 iterations); answers are never stored. The recovery question is deliberately the weakest way in — somebody who knows you may be able to open your work
 - Accessibility: minimum 44 px tap targets, 18 px base text, adjustable text size, light and dark themes, no horizontal scrolling from 320 px to 1920 px, no WCAG AA contrast failures
@@ -29,7 +36,7 @@ A versioned copy lives at [`releases/Rudrabha-Mukherjee-Build-Checklist_v1.4.0.h
 
 ## How to run it
 
-Download the HTML file and open it in any modern browser, or visit the live address above. There is no build, no install and no server to run.
+Download the HTML file and open it in any modern browser, visit the live address above, or install it to your device. There is no build and no server to run.
 
 ## Accessibility and browser support
 

@@ -30,7 +30,8 @@ At minimum:
 - Correctness of key handling
 - Any way to read locked work without the PIN or the recovery answer
 - Any script injection from an opened file
-- Anything causing Rudrabha Mukherjee's Build Checklist to make a network request after it has loaded
+- Any network request after load beyond the documented version check (or beyond what the browser makes on its own for the service worker)
+- Service worker cache poisoning, serving the wrong origin, or pinning a user to an old version without consent
 - Anything that writes readable work to disk when the lock is on
 
 ## Out of scope — documented design properties, not vulnerabilities
@@ -41,5 +42,6 @@ At minimum:
 - Work that the reader exported to a file while the lock was off — that file is deliberately readable, and the app warns about it
 - Anything requiring the reader to paste their own work into a third-party AI assistant
 - Browser or operating system vulnerabilities
+- The version check revealing the user's internet address to the host (documented behaviour, same as loading any web page)
 
 This policy does not claim that the application is free of vulnerabilities, unbreakable, fully secure, or audited.
