@@ -1,5 +1,5 @@
 /* Service worker for this application. Cache name carries the version. */
-var CACHE = "rmbc-1.5.1";
+var CACHE = "rmbc-1.6.0";
 var PRECACHE = [
   "/",
   "/manifest.webmanifest",

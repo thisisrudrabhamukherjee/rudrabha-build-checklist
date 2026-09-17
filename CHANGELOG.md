@@ -6,6 +6,18 @@ The release history is taken from the application's own "What has changed" scree
 Versions follow [Semantic Versioning](https://semver.org/).
 This file uses [Keep a Changelog](https://keepachangelog.com/) section headings.
 
+## [1.6.0] — 17 September 2026
+
+### Changed
+
+- The bar at the top is much smaller, so you see more of your work straight away. The buttons you use most have moved to the bottom of the screen, where your thumb reaches them.
+- Settings are grouped into tidier lists with small pictures beside each row, so they are quicker to scan.
+- Small, quiet movement when screens and messages appear. If your device is set to reduce motion, nothing moves.
+
+### Added
+
+- The app now follows your phone's own light or dark setting, unless you pick one yourself in Settings.
+
 ## [1.5.1] — 17 September 2026
 
 ### Fixed

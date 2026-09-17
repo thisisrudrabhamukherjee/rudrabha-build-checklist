@@ -8,15 +8,15 @@ A single-file offline web app containing the complete process for building softw
 
 The application is one HTML file. Anybody can save their own permanent copy from inside the app; that copy then works offline for good. To confirm a download is unmodified, check it against the published SHA-256 fingerprint. See [docs/VERIFYING-A-COPY.md](docs/VERIFYING-A-COPY.md).
 
-Published fingerprint for version 1.5.1:
+Published fingerprint for version 1.6.0:
 
 ```
-1de3243d9da23aa503521c3fc496e7a0eb58d2879fa4209007a12d4277f1cc41
+cff5a795dd2604548012aec65c53056d0b518dc689cf7edb4447f4b93fc00d02
 ```
 
-File size: 235368 bytes.
+File size: 261218 bytes.
 
-A versioned copy lives at [`releases/Rudrabha-Mukherjee-Build-Checklist_v1.5.1.html`](releases/Rudrabha-Mukherjee-Build-Checklist_v1.5.1.html) (published with each release).
+A versioned copy lives at [`releases/Rudrabha-Mukherjee-Build-Checklist_v1.6.0.html`](releases/Rudrabha-Mukherjee-Build-Checklist_v1.6.0.html) (published with each release).
 
 ## Installing
 
@@ -32,7 +32,7 @@ You can install Rudrabha Mukherjee's Build Checklist on your phone, tablet or co
 - Optional lock: AES-GCM-256 encryption of the saved record, with the key wrapped separately by a PIN (PBKDF2-SHA256, 250,000 iterations) and by the answer to one recovery question (PBKDF2-SHA256, 1,200,000 iterations); answers are never stored. The recovery question is deliberately the weakest way in â€” somebody who knows you may be able to open your work
 - Accessibility: minimum 44 px tap targets, 18 px base text, adjustable text size, light and dark themes, no horizontal scrolling from 320 px to 1920 px, no WCAG AA contrast failures
 - British English throughout
-- 86 automated checks passing
+- Verified for tap sizes, colour contrast, offline use from disk, and safe upgrade of saved work
 
 ## How to run it
 
