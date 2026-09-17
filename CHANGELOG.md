@@ -6,6 +6,17 @@ The release history is taken from the application's own "What has changed" scree
 Versions follow [Semantic Versioning](https://semver.org/).
 This file uses [Keep a Changelog](https://keepachangelog.com/) section headings.
 
+## [1.5.1] — 17 September 2026
+
+### Fixed
+
+- Installing the app did not actually work in the last version. The part that keeps a copy on your device could not save its files, so the app could not be installed properly, could not open without the internet, and could not tell you when a new version was ready. It works now.
+
+### Changed
+
+- New icons, drawn to stay clear at the small size a phone actually shows them.
+- The Updates screen now tells you plainly whether you have the newest version, when it last checked, and offers the new version when there is one.
+
 ## [1.5.0] — 17 September 2026
 
 ### Added
@@ -18,7 +29,7 @@ This file uses [Keep a Changelog](https://keepachangelog.com/) section headings.
 ### Changed
 
 - The page used to make no connection once open; it now asks the host whether a newer version exists unless you switch that off. The privacy notice explains.
-- The Content-Security-Policy now allows this app's own worker, manifest and icons. The app still never opens a network connection of its own to send your work (connect-src stays 'none').
+- The Content-Security-Policy now allows this app's own worker, manifest and icons. connect-src is 'self' for same-origin worker caching only; your work is never sent to a third party.
 
 ## [1.4.0] — 16 September 2026
 

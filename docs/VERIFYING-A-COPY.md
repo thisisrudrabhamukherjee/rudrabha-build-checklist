@@ -2,11 +2,11 @@
 
 These instructions confirm that a copy of Rudrabha Mukherjee's Build Checklist is unmodified.
 
-## Published fingerprint (version 1.5.0)
+## Published fingerprint (version 1.5.1)
 
 | File | Bytes | SHA-256 |
 |---|---|---|
-| `Rudrabha-Mukherjee-Build-Checklist_v1.5.0.html` | 229808 | `3a1b2e8f14625219d92439988b600672721f8bb888af1784af5efed4c08fbe68` |
+| `Rudrabha-Mukherjee-Build-Checklist_v1.5.1.html` | 235368 | `1de3243d9da23aa503521c3fc496e7a0eb58d2879fa4209007a12d4277f1cc41` |
 
 The same bytes are served as `index.html` at the repository root and at the live address.
 
@@ -17,13 +17,13 @@ The fingerprint verifies the HTML file. An installed copy on your device cannot 
 Linux or macOS:
 
 ```bash
-shasum -a 256 Rudrabha-Mukherjee-Build-Checklist_v1.5.0.html
+shasum -a 256 Rudrabha-Mukherjee-Build-Checklist_v1.5.1.html
 ```
 
 Windows PowerShell:
 
 ```powershell
-Get-FileHash Rudrabha-Mukherjee-Build-Checklist_v1.5.0.html -Algorithm SHA256
+Get-FileHash Rudrabha-Mukherjee-Build-Checklist_v1.5.1.html -Algorithm SHA256
 ```
 
 The output must match the hash above exactly. The file must end with a single newline character.

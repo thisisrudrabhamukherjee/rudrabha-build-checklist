@@ -8,15 +8,15 @@ A single-file offline web app containing the complete process for building softw
 
 The application is one HTML file. Anybody can save their own permanent copy from inside the app; that copy then works offline for good. To confirm a download is unmodified, check it against the published SHA-256 fingerprint. See [docs/VERIFYING-A-COPY.md](docs/VERIFYING-A-COPY.md).
 
-Published fingerprint for version 1.5.0:
+Published fingerprint for version 1.5.1:
 
 ```
-3a1b2e8f14625219d92439988b600672721f8bb888af1784af5efed4c08fbe68
+1de3243d9da23aa503521c3fc496e7a0eb58d2879fa4209007a12d4277f1cc41
 ```
 
-File size: 229808 bytes.
+File size: 235368 bytes.
 
-A versioned copy lives at [`releases/Rudrabha-Mukherjee-Build-Checklist_v1.5.0.html`](releases/Rudrabha-Mukherjee-Build-Checklist_v1.5.0.html) (published with each release).
+A versioned copy lives at [`releases/Rudrabha-Mukherjee-Build-Checklist_v1.5.1.html`](releases/Rudrabha-Mukherjee-Build-Checklist_v1.5.1.html) (published with each release).
 
 ## Installing
 
@@ -25,11 +25,11 @@ You can install Rudrabha Mukherjee's Build Checklist on your phone, tablet or co
 ## What it does
 
 - Thirteen stages covering the process of building software with an AI assistant, with every step worth ticking off, tailored to what you are making
-- One self-contained HTML file — no libraries, frameworks, web fonts, icon sets or third-party code — so it keeps working when you have no internet, and so you can save the whole page as a single file
+- One self-contained HTML file â€” no libraries, frameworks, web fonts, icon sets or third-party code â€” so it keeps working when you have no internet, and so you can save the whole page as a single file
 - Installable as a progressive web app; works offline once installed
 - Your work is never sent over the network by the app itself; at a web address it may ask whether a newer version exists (you can switch that off in Settings)
 - Your work is kept in the browser's `localStorage` on your own device; nothing is uploaded; no accounts, cookies, analytics or tracking
-- Optional lock: AES-GCM-256 encryption of the saved record, with the key wrapped separately by a PIN (PBKDF2-SHA256, 250,000 iterations) and by the answer to one recovery question (PBKDF2-SHA256, 1,200,000 iterations); answers are never stored. The recovery question is deliberately the weakest way in — somebody who knows you may be able to open your work
+- Optional lock: AES-GCM-256 encryption of the saved record, with the key wrapped separately by a PIN (PBKDF2-SHA256, 250,000 iterations) and by the answer to one recovery question (PBKDF2-SHA256, 1,200,000 iterations); answers are never stored. The recovery question is deliberately the weakest way in â€” somebody who knows you may be able to open your work
 - Accessibility: minimum 44 px tap targets, 18 px base text, adjustable text size, light and dark themes, no horizontal scrolling from 320 px to 1920 px, no WCAG AA contrast failures
 - British English throughout
 - 86 automated checks passing

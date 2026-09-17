@@ -15,3 +15,5 @@ Thumbs.db
 node_modules/
 .wrangler/
 dist/
+icons/_preview-48.png
+
