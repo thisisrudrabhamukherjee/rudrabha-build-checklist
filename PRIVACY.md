@@ -1,14 +1,14 @@
 # Privacy notice
 
 The authoritative copy of this notice is the one inside the application
-(**Rudrabha Mukherjee's Build Checklist**, version **1.8.0**). This file is provided so the
+(**Rudrabha Mukherjee's Build Checklist**, version **1.9.0**). This file is provided so the
 notice can be read on GitHub without opening the app.
 
 ---
 
 PRIVACY NOTICE
 
-Rudrabha Mukherjee's Build Checklist, version 1.8.0
+Rudrabha Mukherjee's Build Checklist, version 1.9.0
 Created by Rudrabha Mukherjee
 
 SHORT VERSION
@@ -57,7 +57,7 @@ this page's. Read theirs before sending anything private.
 LOCK
 If you turn on the lock, your work is scrambled on this device with a key made
 from your PIN. Nobody, including Rudrabha Mukherjee, can unscramble it without
-your PIN or your answer.
+your PIN (or your recovery answer, if you chose to set one).
 
 CHILDREN
 This page collects nothing, so it collects nothing about children either.

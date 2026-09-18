@@ -8,15 +8,15 @@ A single-file offline web app containing the complete process for building softw
 
 The application is one HTML file. Anybody can save their own permanent copy from inside the app; that copy then works offline for good. To confirm a download is unmodified, check it against the published SHA-256 fingerprint. See [docs/VERIFYING-A-COPY.md](docs/VERIFYING-A-COPY.md).
 
-Published fingerprint for version 1.8.0:
+Published fingerprint for version 1.9.0:
 
 ```
-7014304c23d6e46e6219d824ccaeca2edf7a393e9e9156c287c9e09d50df3c0c
+1c4e8f732c42c4d9ea61c36dafbba2d7da2726c0062d7d5e87870cbefa83d134
 ```
 
-File size: 271511 bytes.
+File size: 274251 bytes.
 
-A versioned copy lives at [`releases/Rudrabha-Mukherjee-Build-Checklist_v1.8.0.html`](releases/Rudrabha-Mukherjee-Build-Checklist_v1.8.0.html) (published with each release).
+A versioned copy lives at [`releases/Rudrabha-Mukherjee-Build-Checklist_v1.9.0.html`](releases/Rudrabha-Mukherjee-Build-Checklist_v1.9.0.html) (published with each release).
 
 ## Installing
 
@@ -29,7 +29,7 @@ You can install Rudrabha Mukherjee's Build Checklist on your phone, tablet or co
 - Installable as a progressive web app; works offline once installed
 - Your work is never sent over the network by the app itself; at a web address it may ask whether a newer version exists (you can switch that off in Settings)
 - Your work is kept in the browser's `localStorage` on your own device; nothing is uploaded; no accounts, cookies, analytics or tracking
-- Optional lock: AES-GCM-256 encryption of the saved record, with the key wrapped separately by a PIN (PBKDF2-SHA256, 250,000 iterations) and by the answer to one recovery question (PBKDF2-SHA256, 1,200,000 iterations); answers are never stored. The recovery question is deliberately the weakest way in â€” somebody who knows you may be able to open your work
+- Optional lock: AES-GCM-256 encryption of the saved record, with the key wrapped by a PIN (PBKDF2-SHA256, 250,000 iterations) and optionally by the answer to one recovery question (PBKDF2-SHA256, 1,200,000 iterations); answers are never stored. Setting a recovery question is optional: you can choose to rely on your PIN alone for maximum secrecy, or add a question as a safety net.
 - Accessibility: minimum 44 px tap targets, 18 px base text, adjustable text size, light and dark themes, no horizontal scrolling from 320 px to 1920 px, no WCAG AA contrast failures
 - British English throughout
 - Verified for tap sizes, colour contrast, offline use from disk, and safe upgrade of saved work

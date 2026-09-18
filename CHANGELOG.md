@@ -6,6 +6,16 @@ The release history is taken from the application's own "What has changed" scree
 Versions follow [Semantic Versioning](https://semver.org/).
 This file uses [Keep a Changelog](https://keepachangelog.com/) section headings.
 
+## [1.9.0] — 18 September 2026
+
+### Changed
+
+- The recovery question on the lock screen is now optional. You can choose to rely on your PIN alone for stronger security, or set a question as a safety net.
+
+### Added
+
+- Support for PIN-only locks, with the ability to add, change, or remove a recovery question at any time while locked.
+
 ## [1.8.0] — 18 September 2026
 
 ### Changed
