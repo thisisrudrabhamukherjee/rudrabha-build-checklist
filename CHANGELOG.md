@@ -6,6 +6,20 @@ The release history is taken from the application's own "What has changed" scree
 Versions follow [Semantic Versioning](https://semver.org/).
 This file uses [Keep a Changelog](https://keepachangelog.com/) section headings.
 
+## [1.10.0] — 18 September 2026
+
+### Refactored
+
+- Responsive navigation: displays a sleek top header navigation bar on desktop (>=768px) and maintains a fixed bottom tab bar on mobile screens.
+- Desktop layout structure: expanded maximum container width to `max-w-7xl` (1280px) on large screens, with a sticky left stage navigation spine and right active stage content.
+- Compact flex row footer: re-laid out footer metadata cards into an elegant, space-efficient horizontal flex row sitting at the bottom of the page flow.
+
+### Fixed
+
+- Bottom content clipping: added sufficient bottom container padding above the mobile fixed bottom navigation bar, preventing action buttons and footer text from being clipped.
+- Stray Saved indicator: contained the "Saved ✓" indicator inside the relative header flexbox and eliminated margin leaking and duplicate element IDs.
+- Eliminating nested scrollbars: removed inline `max-height` and `overflow-y` constraints on inner prompt cards, allowing natural page scrolling without double scrollbars.
+
 ## [1.9.0] — 18 September 2026
 
 ### Changed
