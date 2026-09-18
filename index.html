@@ -6,40 +6,38 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon-180.png">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#F8F8F6" id="themeColorMeta">
+<meta name="theme-color" content="#0F4F35" id="themeColorMeta">
 <meta name="color-scheme" content="light dark">
 <meta name="mobile-web-app-capable" content="yes">
 <title>Rudrabha Mukherjee's Build Checklist — how to make software with AI, step by step</title>
 <style>
 :root, :root[data-theme="light"]{
-  --ground:#F8F8F6; --surface:#FFFFFF; --sect:#F1F1EE;
-  --ink:#15171A; --muted:#545B66; --quiet:#767E8C;
-  --rule:#E0E2E6; --rule-soft:#ECEEF1;
-  --go:#F2C94C; --go-soft:#FCF5DC;
-  --brand:#F2C94C; --brand-soft:#FCF5DC;
-  --caution:#8C5800; --caution-soft:#FCF5DC;
-  --danger:#C53B27; --focus:#15171A;
+  --ground:#EDEFF2; --surface:#FFFFFF; --sect:#F4F7F9;
+  --ink:#15171A; --muted:#3A4753; --quiet:#44525E;
+  --rule:#B9C3CD; --rule-soft:#D6DDE3;
+  --go:#0F4F35; --go-soft:#E2EFE8;
+  --caution:#6B3D0A; --caution-soft:#FBF1E3;
+  --danger:#8A2A12; --focus:#134E9E;
   --s1:4px; --s2:8px; --s3:12px; --s4:16px; --s5:24px; --s6:32px; --s7:48px;
   --topH:56px; --botH:56px; --maxw:1280px;
   --r-ctrl:8px; --r-card:12px; --r-sheet:16px;
   --ease:cubic-bezier(0.2, 0, 0, 1);
   --fast:120ms; --base:180ms; --slow:260ms;
-  --lift-1:0 1px 2px rgba(21,23,26,.05), 0 1px 3px rgba(21,23,26,.07);
-  --lift-2:0 4px 12px rgba(21,23,26,.08);
-  --lift-3:0 -4px 20px rgba(21,23,26,.10);
-  --scrim:rgba(21,23,26,.45);
-  --sans:"Inter Display","Inter Variable","Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Helvetica Neue",Arial,sans-serif;
+  --lift-1:0 1px 2px rgba(16,24,32,.06), 0 1px 3px rgba(16,24,32,.08);
+  --lift-2:0 4px 12px rgba(16,24,32,.10);
+  --lift-3:0 -4px 20px rgba(16,24,32,.12);
+  --scrim:rgba(16,24,32,.42);
+  --sans:"Inter",ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Helvetica Neue",Arial,sans-serif;
   --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme]){
-    --ground:#15171A; --surface:#1C1F24; --sect:#24282E;
-    --ink:#FFFFFF; --muted:#9DA7B3; --quiet:#6B7684;
-    --rule:#333A42; --rule-soft:#252A30;
-    --go:#F2C94C; --go-soft:#2D2510;
-    --brand:#F2C94C; --brand-soft:#2D2510;
-    --caution:#F2C94C; --caution-soft:#2D2510;
-    --danger:#E05D44; --focus:#F2C94C;
+    --ground:#15171A; --surface:#1D2126; --sect:#252930;
+    --ink:#FFFFFF; --muted:#C9D3DC; --quiet:#B4C0CB;
+    --rule:#4A5966; --rule-soft:#33404C;
+    --go:#8FD8B2; --go-soft:#173226;
+    --caution:#F2C283; --caution-soft:#33260F;
+    --danger:#F09C86; --focus:#8AB8F2;
     --lift-1:0 1px 2px rgba(0,0,0,.35), 0 1px 3px rgba(0,0,0,.4);
     --lift-2:0 4px 12px rgba(0,0,0,.45);
     --lift-3:0 -4px 20px rgba(0,0,0,.5);
@@ -47,45 +45,44 @@
   }
 }
 :root[data-theme="dark"]{
-  --ground:#15171A; --surface:#1C1F24; --sect:#24282E;
-  --ink:#FFFFFF; --muted:#9DA7B3; --quiet:#6B7684;
-  --rule:#333A42; --rule-soft:#252A30;
-  --go:#F2C94C; --go-soft:#2D2510;
-  --brand:#F2C94C; --brand-soft:#2D2510;
-  --caution:#F2C94C; --caution-soft:#2D2510;
-  --danger:#E05D44; --focus:#F2C94C;
+  --ground:#15171A; --surface:#1D2126; --sect:#252930;
+  --ink:#FFFFFF; --muted:#C9D3DC; --quiet:#B4C0CB;
+  --rule:#4A5966; --rule-soft:#33404C;
+  --go:#8FD8B2; --go-soft:#173226;
+  --caution:#F2C283; --caution-soft:#33260F;
+  --danger:#F09C86; --focus:#8AB8F2;
   --lift-1:0 1px 2px rgba(0,0,0,.35), 0 1px 3px rgba(0,0,0,.4);
   --lift-2:0 4px 12px rgba(0,0,0,.45);
   --lift-3:0 -4px 20px rgba(0,0,0,.5);
   --scrim:rgba(0,0,0,.55);
 }
 @media (prefers-color-scheme: dark){
-  :root:not([data-theme]) .btn{ background:#FFFFFF;border-color:#FFFFFF;color:#15171A }
+  :root:not([data-theme]) .btn{ background:#E9EEF3;border-color:#E9EEF3;color:#15171A }
   :root:not([data-theme]) .btn.ghost{ background:var(--surface);color:var(--ink);border-color:var(--rule) }
-  :root:not([data-theme]) .btn.go{ background:#F2C94C;border-color:#F2C94C;color:#15171A }
+  :root:not([data-theme]) .btn.go{ background:#1E7A50;border-color:#1E7A50;color:#FFFFFF }
   :root:not([data-theme]) .btn.danger{ background:#B0402A;border-color:#B0402A;color:#FFFFFF }
   :root:not([data-theme]) .chip[aria-pressed="true"],
-  :root:not([data-theme]) .sizer button[aria-pressed="true"]{ background:#F2C94C;color:#15171A;border-color:#F2C94C }
+  :root:not([data-theme]) .sizer button[aria-pressed="true"]{ background:#E9EEF3;color:#15171A;border-color:#E9EEF3 }
   :root:not([data-theme]) .station.done .dot{ color:#15171A }
   :root:not([data-theme]) .check.on svg,:root:not([data-theme]) .opt[aria-pressed="true"] .box svg{ stroke:#15171A }
   :root:not([data-theme]) .check.on,:root:not([data-theme]) .opt[aria-pressed="true"] .box{ background:var(--go);border-color:var(--go) }
   :root:not([data-theme]) .status{ background:var(--go-soft);border-bottom-color:var(--go) }
-  :root:not([data-theme]) .foot{ background:#111316 }
+  :root:not([data-theme]) .foot{ background:#101215 }
   :root:not([data-theme]) mark{ background:#F2C94C;color:#15171A }
   :root:not([data-theme]) .warn{ color:var(--caution) }
   :root:not([data-theme]) .botbar button[aria-current="page"]{ color:var(--ink) }
 }
-:root[data-theme="dark"] .btn{ background:#FFFFFF;border-color:#FFFFFF;color:#15171A }
+:root[data-theme="dark"] .btn{ background:#E9EEF3;border-color:#E9EEF3;color:#15171A }
 :root[data-theme="dark"] .btn.ghost{ background:var(--surface);color:var(--ink);border-color:var(--rule) }
-:root[data-theme="dark"] .btn.go{ background:#F2C94C;border-color:#F2C94C;color:#15171A }
+:root[data-theme="dark"] .btn.go{ background:#1E7A50;border-color:#1E7A50;color:#FFFFFF }
 :root[data-theme="dark"] .btn.danger{ background:#B0402A;border-color:#B0402A;color:#FFFFFF }
-:root[data-theme="dark"] .chip[aria-pressed="true"]{ background:#F2C94C;color:#15171A;border-color:#F2C94C }
-:root[data-theme="dark"] .sizer button[aria-pressed="true"]{ background:#F2C94C;color:#15171A;border-color:#F2C94C }
+:root[data-theme="dark"] .chip[aria-pressed="true"]{ background:#E9EEF3;color:#15171A;border-color:#E9EEF3 }
+:root[data-theme="dark"] .sizer button[aria-pressed="true"]{ background:#E9EEF3;color:#15171A;border-color:#E9EEF3 }
 :root[data-theme="dark"] .station.done .dot{ color:#15171A }
 :root[data-theme="dark"] .check.on svg,:root[data-theme="dark"] .opt[aria-pressed="true"] .box svg{ stroke:#15171A }
 :root[data-theme="dark"] .check.on,:root[data-theme="dark"] .opt[aria-pressed="true"] .box{ background:var(--go);border-color:var(--go) }
 :root[data-theme="dark"] .status{ background:var(--go-soft);border-bottom-color:var(--go) }
-:root[data-theme="dark"] .foot{ background:#111316 }
+:root[data-theme="dark"] .foot{ background:#101215 }
 :root[data-theme="dark"] mark{ background:#F2C94C;color:#15171A }
 :root[data-theme="dark"] .warn{ color:var(--caution) }
 :root[data-theme="dark"] .botbar button[aria-current="page"]{ color:var(--ink) }
@@ -97,7 +94,7 @@ button{font:inherit;color:inherit;touch-action:manipulation}
 input,textarea,select{max-width:100%;touch-action:manipulation}
 input[type=search]{-webkit-appearance:none;appearance:none}
 .route>*,.item-row>*,.topbar-in>*,.sec-head>*{min-width:0}
-h1,h2,h3{margin:0;font-weight:700;line-height:1.25;letter-spacing:-0.02em}
+h1,h2,h3{margin:0;font-weight:680;line-height:1.25}
 p{margin:0 0 var(--s3)}p:last-child{margin-bottom:0}
 mark{background:#F2C94C;color:#15171A;padding:0 .12em;border-radius:2px;font-weight:600}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
@@ -116,7 +113,7 @@ mark{background:#F2C94C;color:#15171A;padding:0 .12em;border-radius:2px;font-wei
 .nav-tab .bi{display:inline-flex;align-items:center;justify-content:center}
 .nav-tab .bi svg{width:18px;height:18px;vertical-align:middle}
 .nav-tab:hover{color:var(--ink);background:var(--surface);border-color:var(--rule-soft)}
-.nav-tab[aria-current="page"]{color:var(--ink);font-weight:700;background:var(--surface);border-color:var(--rule);border-bottom:2px solid var(--go);box-shadow:var(--lift-1)}
+.nav-tab[aria-current="page"]{color:var(--ink);font-weight:700;background:var(--surface);border-color:var(--rule);box-shadow:var(--lift-1)}
 @media (min-width:768px){
   .desktop-nav{display:flex;align-items:center;gap:4px;margin-left:auto;margin-right:var(--s3)}
   .botbar{display:none!important}
@@ -131,8 +128,8 @@ mark{background:#F2C94C;color:#15171A;padding:0 .12em;border-radius:2px;font-wei
 .iconbtn{flex:none;width:44px;height:44px;padding:0;border:0;background:transparent;border-radius:var(--r-ctrl);cursor:pointer;display:grid;place-items:center;color:var(--ink)}
 .iconbtn svg{width:24px;height:24px}
 .iconbtn[hidden]{display:none!important}
-.saved{font-size:.82rem;color:var(--ink);background:var(--go-soft);font-weight:640;border:1px solid var(--go);border-radius:var(--r-ctrl);padding:2px 8px;white-space:nowrap;transition:all var(--base) var(--ease)}
-.saved.flash{background:var(--go);border-color:var(--go);color:#15171A}
+.saved{font-size:.82rem;color:var(--go);font-weight:640;border:2px solid transparent;border-radius:var(--r-ctrl);padding:2px 6px;white-space:nowrap;transition:background var(--base) var(--ease),border-color var(--base) var(--ease)}
+.saved.flash{background:var(--go-soft);border-color:var(--go)}
 .saved.warn{color:var(--caution);background:var(--caution-soft);border-color:var(--caution)}
 .meter{display:flex;align-items:center;gap:var(--s2);margin:0 0 var(--s4)}
 .meter-track{flex:1 1 auto;height:10px;background:var(--surface);border:1px solid var(--rule);border-radius:99px;overflow:hidden}
@@ -192,7 +189,7 @@ mark{background:#F2C94C;color:#15171A;padding:0 .12em;border-radius:2px;font-wei
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 var(--s5);
   border:2px solid var(--ink);background:var(--ink);color:#fff;border-radius:4px;font-size:1rem;font-weight:620;cursor:pointer;text-align:center}
 .btn.ghost{background:var(--surface);color:var(--ink);border-color:var(--rule)}
-.btn.go{background:var(--go);border-color:var(--go);color:#15171A;font-weight:640}
+.btn.go{background:var(--go);border-color:var(--go)}
 .btn.danger{background:var(--danger);border-color:var(--danger)}
 .btn:disabled{opacity:.5;cursor:not-allowed}
 .btn.sm{min-height:48px;padding:0 var(--s4);font-size:.94rem;font-weight:580}
@@ -216,7 +213,6 @@ select:focus{border-color:var(--focus)}
 .opt[aria-pressed="true"]{border-color:var(--go);background:var(--go-soft)}
 .opt .box{flex:none;width:28px;height:28px;margin-top:2px;border:2px solid var(--quiet);border-radius:4px;background:var(--surface);display:grid;place-items:center}
 .opt[aria-pressed="true"] .box{border-color:var(--go);background:var(--go)}
-.opt[aria-pressed="true"] .box svg{stroke:#15171A}
 .opt .box svg{display:none;width:18px;height:18px}
 .opt[aria-pressed="true"] .box svg{display:block}
 .opt .t{font-size:1.02rem;font-weight:620;display:block}
@@ -288,7 +284,7 @@ ul.items{list-style:none;margin:0;padding:0}
   cursor:pointer;display:grid;place-items:center;padding:0}
 .check svg{display:none;width:26px;height:26px}
 .check.on{background:var(--go);border-color:var(--go)}
-.check.on svg{display:block;stroke:#15171A}
+.check.on svg{display:block}
 .item-body{min-width:0;flex:1;padding-top:var(--s1)}
 .item-t{font-size:1.06rem;font-weight:620;line-height:1.4;cursor:pointer;display:block;text-align:left;background:none;border:0;padding:9px 0;min-height:44px;width:100%}
 .item.done .item-t{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--quiet);text-decoration-thickness:2px}
@@ -524,7 +520,7 @@ ul.items{list-style:none;margin:0;padding:0}
 <footer class="foot">
   <div class="foot-in">
     <dl><dt>Created by</dt><dd><b id="ownLabel">Rudrabha Mukherjee</b></dd></dl>
-    <dl><dt>Version</dt><dd><span id="verLabel">1.11.0</span> &#183; <span id="dateLabel">18 September 2026</span></dd></dl>
+    <dl><dt>Version</dt><dd><span id="verLabel">1.10.0</span> &#183; <span id="dateLabel">18 September 2026</span></dd></dl>
     <dl><dt>Opened</dt><dd id="nowStamp">&#8212;</dd></dl>
     <dl><dt>Your information</dt><dd>Stays on this device. Nothing you write is sent anywhere.</dd></dl>
   </div>
@@ -537,7 +533,7 @@ if (location.protocol === "file:") {
 }
 /* Conditions: shown steps depend on these */
 var DOC_NAME = "Rudrabha Mukherjee's Build Checklist";
-var DOC_VERSION = "1.11.0";
+var DOC_VERSION = "1.10.0";
 var DOC_LICENCE = "BSD 3-Clause Licence";
 var DOC_YEAR = "2026";
 
@@ -2067,7 +2063,7 @@ function applyTheme(){
   if(t==="system"||t==="") document.documentElement.removeAttribute("data-theme");
   else document.documentElement.setAttribute("data-theme", t==="dark"?"dark":"light");
   var meta=document.getElementById("themeColorMeta");
-  if(meta) meta.setAttribute("content", activeIsDark() ? "#15171A" : "#F8F8F6");
+  if(meta) meta.setAttribute("content", activeIsDark() ? "#10161D" : "#0F4F35");
 }
 try{
   if(window.matchMedia){
@@ -2978,12 +2974,6 @@ function tryOpen(which){
    THE OFFICIAL PAGES
    ========================================================================== */
 var CHANGELOG = [
-  { v:"1.11.0", d:"18 September 2026", items:[
-    "Changed: aligned full visual design with the Ghost Brand Book aesthetic: Editorial Minimalism, Monochrome Precision, and Typographic Authority.",
-    "Changed: updated brand color palette to pure Obsidian Black (#15171A), Pure White (#FFFFFF), and signature Dijon Yellow (#F2C94C) accents.",
-    "Changed: typography updated to Inter Display for authoritative headings and Inter Variable for fluid body copy with tight letter-spacing.",
-    "Changed: redesigned buttons, check states, stage dots, and progress meters with high-contrast Dijon Yellow and Obsidian Black styling."
-  ]},
   { v:"1.10.0", d:"18 September 2026", items:[
     "Refactored: responsive navigation with a top header tab bar on desktop (>=768px) and a fixed bottom tab bar on mobile devices.",
     "Fixed: mobile bottom content clipping by ensuring adequate bottom padding on scrollable containers and footers above the bottom tab bar.",
