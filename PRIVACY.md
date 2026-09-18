@@ -1,14 +1,14 @@
 # Privacy notice
 
 The authoritative copy of this notice is the one inside the application
-(**Rudrabha Mukherjee's Build Checklist**, version **1.7.0**). This file is provided so the
+(**Rudrabha Mukherjee's Build Checklist**, version **1.8.0**). This file is provided so the
 notice can be read on GitHub without opening the app.
 
 ---
 
 PRIVACY NOTICE
 
-Rudrabha Mukherjee's Build Checklist, version 1.7.0
+Rudrabha Mukherjee's Build Checklist, version 1.8.0
 Created by Rudrabha Mukherjee
 
 SHORT VERSION

@@ -6,6 +6,14 @@ The release history is taken from the application's own "What has changed" scree
 Versions follow [Semantic Versioning](https://semver.org/).
 This file uses [Keep a Changelog](https://keepachangelog.com/) section headings.
 
+## [1.8.0] — 18 September 2026
+
+### Changed
+
+- Editorial minimalism and typographic authority: updated the interface typography stack anchored by the clean Inter font family and tracked uppercase section headers.
+- Refined monochrome precision palette: implemented a pure Obsidian Black (`#15171A`), crisp Pure White (`#FFFFFF`), and Dijon Yellow (`#F2C94C`) mark accent palette with verified WCAG contrast compliance across all themes.
+- Streamlined stage cards, 1px crisp dividers, and tracked uppercase stage numbers for enhanced clarity across phones and widescreen displays.
+
 ## [1.7.0] — 18 September 2026
 
 ### Fixed

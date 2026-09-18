@@ -8,15 +8,15 @@ A single-file offline web app containing the complete process for building softw
 
 The application is one HTML file. Anybody can save their own permanent copy from inside the app; that copy then works offline for good. To confirm a download is unmodified, check it against the published SHA-256 fingerprint. See [docs/VERIFYING-A-COPY.md](docs/VERIFYING-A-COPY.md).
 
-Published fingerprint for version 1.7.0:
+Published fingerprint for version 1.8.0:
 
 ```
-1914aed07a0f9556d85c5b7ae80cace8384a118ce7670644cb3c05be1d3a5a62
+7014304c23d6e46e6219d824ccaeca2edf7a393e9e9156c287c9e09d50df3c0c
 ```
 
-File size: 269584 bytes.
+File size: 271511 bytes.
 
-A versioned copy lives at [`releases/Rudrabha-Mukherjee-Build-Checklist_v1.7.0.html`](releases/Rudrabha-Mukherjee-Build-Checklist_v1.7.0.html) (published with each release).
+A versioned copy lives at [`releases/Rudrabha-Mukherjee-Build-Checklist_v1.8.0.html`](releases/Rudrabha-Mukherjee-Build-Checklist_v1.8.0.html) (published with each release).
 
 ## Installing
 
