@@ -6,6 +6,15 @@ The release history is taken from the application's own "What has changed" scree
 Versions follow [Semantic Versioning](https://semver.org/).
 This file uses [Keep a Changelog](https://keepachangelog.com/) section headings.
 
+## [1.11.0] — 18 September 2026
+
+### Changed
+
+- Full visual alignment with the Ghost Brand Book aesthetic: Editorial Minimalism, Monochrome Precision, and Typographic Authority.
+- Updated brand color palette to pure Obsidian Black (`#15171A`), Pure White (`#FFFFFF`), and signature Dijon Yellow (`#F2C94C`) accents.
+- Modernized typography stack to `Inter Display` for commanding headlines and `Inter Variable` for clean, readable body prose.
+- Redesigned action buttons, check states, stage progress dots, and meter bars with high-contrast Dijon Yellow and Obsidian Black styling.
+
 ## [1.10.0] — 18 September 2026
 
 ### Refactored

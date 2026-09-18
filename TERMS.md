@@ -1,14 +1,14 @@
 # Terms of use
 
 The authoritative copy of these terms is the one inside the application
-(**Rudrabha Mukherjee's Build Checklist**, version **1.10.0**). This file is provided so the
+(**Rudrabha Mukherjee's Build Checklist**, version **1.11.0**). This file is provided so the
 terms can be read on GitHub without opening the app.
 
 ---
 
 TERMS OF USE
 
-Rudrabha Mukherjee's Build Checklist, version 1.10.0
+Rudrabha Mukherjee's Build Checklist, version 1.11.0
 
 1. This page is free to use, and is given as is, with no promises that it
    will suit any particular purpose.
